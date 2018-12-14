@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar'
-import './App.css';
 import CastList from './components/CastList';
 
 class App extends Component {
