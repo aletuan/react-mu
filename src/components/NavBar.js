@@ -111,7 +111,13 @@ class NavBar extends React.Component {
     };
 
     onSearchInputChange = (event) => {
-        console.log("Search changed ..." + event.target.value)
+        console.log("Search changed ..." + event.target.value);
+        // TODO: Need to send the redux action
+        if (event.target.value) {
+            // this.setState({ searchString: event.target.value })
+        } else {
+            // this.setState({ searchString: '' })
+        }
     }
 
     render() {
@@ -175,7 +181,7 @@ class NavBar extends React.Component {
                         </IconButton>
                         <Typography className={classes.title} variant="h6" color="inherit" noWrap>
                             Material-UI
-            </Typography>
+                        </Typography>
                         <div className={classes.search}>
                             <div className={classes.searchIcon}>
                                 <SearchIcon />
